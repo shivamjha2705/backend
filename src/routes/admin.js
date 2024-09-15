@@ -58,7 +58,7 @@ router.post('/login', async (req, res) => {
 
 
 // Get all Admins
-router.get('/', async (req, res) => {
+router.get('https://backend-two-omega-63.vercel.app/', async (req, res) => {
     try {
       const [rows] = await pool.query('SELECT * FROM admin');
       res.status(200).json({data:rows});
